@@ -16,9 +16,16 @@ body{
 min-height: 100vh;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 
 @layer components {
-.aspect-r{
-  aspect-ratio: 1/2;
+.translate{
+  transform: translate(-50%, -50%);
 }
+
 }
