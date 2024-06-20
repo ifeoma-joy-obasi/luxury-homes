@@ -80,7 +80,7 @@ const Hero = () => {
         </form>
 
         {/* for large screens */}
-        <form className="hidden bg-white/100 md:flex items-center w-[85%] rounded-full pr-2 mx-auto mt-4 ">
+        <form className="hidden bg-white/100 md:flex items-center w-[85%] rounded-full pr-2 mx-auto mt-4 md:w-[100%] lg:w-[85%] ">
           <div className="flex w-[90%] items-center gap-[4px]">
             {/* maping over data */}
 
