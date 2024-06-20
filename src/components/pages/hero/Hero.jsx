@@ -74,7 +74,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="border-[0.5px] border-gray-700/10 mt-3"></div>
-          <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all">
+          <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all font-medium">
             Search
           </button>
         </form>
@@ -110,7 +110,7 @@ const Hero = () => {
             )}
           </div>
 
-          <button className="bg-gray-700 text-white font-montserrat rounded-full p-2 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[0.9rem] font-medium">
+          <button className="bg-gray-700 text-white font-montserrat rounded-full p-2 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[0.9rem] font-medium md:text-[0.8rem] lg:text-[0.9rem]">
             Search
           </button>
         </form>
