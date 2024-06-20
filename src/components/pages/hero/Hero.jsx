@@ -52,15 +52,15 @@ const Hero = () => {
       />
 
       <div className="absolute w-[90%] top-[50%] left-[50%] translate ">
-        <h1 className="font-palanquin font-bold text-[1.59rem] text-center text-gray-800 md:text-[2rem]">
+        <h1 className="font-palanquin font-bold text-[1.59rem] text-center text-gray-950 md:text-[2rem] md:font-[900]">
           Comfortable living. Monthly stays. Healthy environment
         </h1>
-        <p className="text-center font-montserrat text-gray-800 mt-2 text-[0.95rem] md:text-[1rem]">
+        <p className="text-center font-montserrat text-black mt-2 text-[0.95rem] md:text-[1rem] font-[600]">
           Move-in ready apartments across 500+ cities
         </p>
 
         {/* for small screens */}
-        <form className="bg-white rounded-2xl py-4 px-5 mt-5 md:hidden">
+        <form className="bg-white/100 rounded-2xl py-4 px-5 mt-5 md:hidden">
           <div className="flex items-center gap-3">
             <SearchIcon className="text-gray-700" />
             <Link to={`${SEARCHPAGE}`}>
@@ -81,12 +81,18 @@ const Hero = () => {
 
         {/* for large screens */}
         <form className="hidden bg-white/100 md:flex items-center w-[85%] rounded-full pr-2 mx-auto mt-4 ">
-
           <div className="flex w-[90%] items-center gap-[4px]">
             {/* maping over data */}
 
             {heroData.map(
-              ({ label, inputPlaceholder, inputType, itemWidth, myCustomBorderRightClass, key }) => (
+              ({
+                label,
+                inputPlaceholder,
+                inputType,
+                itemWidth,
+                myCustomBorderRightClass,
+                key,
+              }) => (
                 <div
                   key={key}
                   className={`flex flex-col ${itemWidth} pl-5 hover:ring-1 ring-gray-950 hover:rounded-full py-2 transition-all ${myCustomBorderRightClass} cursor-pointer`}
@@ -102,18 +108,13 @@ const Hero = () => {
                 </div>
               )
             )}
-
           </div>
 
           <button className="bg-gray-700 text-white font-montserrat rounded-full p-2 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[0.9rem] font-medium">
             Search
           </button>
-
         </form>
-
-
       </div>
-      
     </section>
   );
 };
