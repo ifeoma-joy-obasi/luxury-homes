@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="flex justify-between h-[70px] items-center w-full">
       <Link
         to="/"
-        className="text-slate-900/90 font-palanquin h-10  font-bold text-[18px]"
+        className="text-gray-800 font-palanquin h-10  font-bold text-[18px]"
       >
         LuxuryHomes
       </Link>

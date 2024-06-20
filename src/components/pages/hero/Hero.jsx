@@ -1,11 +1,48 @@
 import React from 'react'
 import HeroImage from '../../../assets/images/hero-img.jpg'
 import { icons } from "../../../assets";
-const { SearchIcon, CloseIcon } = icons;
+const { SearchIcon } = icons;
 import { Link } from "react-router-dom";
 import { SEARCHPAGE } from '../../constants';
 
 const Hero = () => {
+
+  const heroData = [
+    {
+      key: 1,
+      itemWidth: "w-[30%]",
+      label: "Location",
+      inputType: "text",
+      inputPlaceholder: "Enter a destination...",
+      myCustomBorderRightClass: 'my-custom-border-right',
+    },
+    {
+      key: 2,
+      itemWidth: "w-[25%]",
+      label: "Move in",
+      inputType: "text",
+      inputPlaceholder: "Add dates",
+      myCustomBorderRightClass: "my-custom-border-right",
+    },
+    {
+      key: 2,
+      itemWidth: "w-[25%]",
+      label: "Move-out",
+      inputType: "text",
+      inputPlaceholder: "Add dates",
+      myCustomBorderRightClass: "my-custom-border-right",
+    },
+    {
+      key: 4,
+      itemWidth: "w-[25%]",
+      label: "Guests",
+      inputType: "text",
+      inputPlaceholder: "Add guests",
+    },
+  ];
+
+
+
   return (
     <section className="relative">
       <img
@@ -15,33 +52,68 @@ const Hero = () => {
       />
 
       <div className="absolute w-[90%] top-[50%] left-[50%] translate ">
-        <h1 className="font-palanquin font-bold text-[25px] text-center text-slate-500/80">
+        <h1 className="font-palanquin font-bold text-[1.59rem] text-center text-gray-800 md:text-[2rem]">
           Comfortable living. Monthly stays. Healthy environment
         </h1>
-        <p className="text-center font-montserrat text-slate-500/100 mt-2 text-[15px]">
+        <p className="text-center font-montserrat text-gray-800 mt-2 text-[0.95rem] md:text-[1rem]">
           Move-in ready apartments across 500+ cities
         </p>
 
-        <form className="bg-white rounded-2xl py-4 px-5 mt-5">
+        {/* for small screens */}
+        <form className="bg-white rounded-2xl py-4 px-5 mt-5 md:hidden">
           <div className="flex items-center gap-3">
-            <SearchIcon className="text-slate-500/100" />
+            <SearchIcon className="text-gray-700" />
             <Link to={`${SEARCHPAGE}`}>
               <input
                 type="search"
                 name=""
                 id=""
                 placeholder="Enter a destination"
-                className="outline-none text-[0.9rem] w-full text-slate-500/100 placeholder:text-slate-500"
+                className="outline-none text-[0.9rem] w-full text-gray-700 placeholder:text-gray-700"
               />
             </Link>
-            {/* <CloseIcon/> */}
           </div>
-          <div className="border-[0.5px] border-slate-900/5 mt-3"></div>
-          <button className="bg-blue-900/100 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-blue-900/70 transition-all">
+          <div className="border-[0.5px] border-gray-700/10 mt-3"></div>
+          <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all">
             Search
           </button>
         </form>
+
+        {/* for large screens */}
+        <form className="hidden bg-white/100 md:flex items-center w-[85%] rounded-full pr-2 mx-auto mt-4 ">
+
+          <div className="flex w-[90%] items-center gap-[4px]">
+            {/* maping over data */}
+
+            {heroData.map(
+              ({ label, inputPlaceholder, inputType, itemWidth, myCustomBorderRightClass, key }) => (
+                <div
+                  key={key}
+                  className={`flex flex-col ${itemWidth} pl-5 hover:ring-1 ring-gray-950 hover:rounded-full py-2 transition-all ${myCustomBorderRightClass} cursor-pointer`}
+                >
+                  <span className="text-[0.7rem] text-gray-900 font-medium font-palanquin">
+                    {label}
+                  </span>
+                  <input
+                    type={inputType}
+                    placeholder={inputPlaceholder}
+                    className="bg-transparent text-[0.7rem] placeholder:text-gray-500 outline-none focus:outline-none placeholder:font-montserrat"
+                  />
+                </div>
+              )
+            )}
+
+          </div>
+
+          <button className="bg-gray-700 text-white font-montserrat rounded-full p-2 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[0.9rem] font-medium">
+            Search
+          </button>
+
+        </form>
+
+
       </div>
+      
     </section>
   );
 };

@@ -28,4 +28,18 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translate(-50%, -50%);
 }
 
+.my-custom-border-right{
+  position: relative;
+}
+
+.my-custom-border-right::after{
+  content: '';
+  position: absolute;
+background: #cac9c9;
+top: 12px;
+right: -2px;
+width: 0.2px;
+height: 30px;
+}
+
 }
