@@ -25,7 +25,7 @@ const Hero = () => {
       myCustomBorderRightClass: "my-custom-border-right",
     },
     {
-      key: 2,
+      key: 3,
       itemWidth: "w-[25%]",
       label: "Move-out",
       inputType: "text",

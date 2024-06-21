@@ -1,7 +1,9 @@
-const SEARCHPAGE = '/search-pag';
+const SEARCHPAGE = 'search-page';
+const LOGIN = "login";
 
 
 
 export {
     SEARCHPAGE,
+    LOGIN,
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import Hero from '../hero/Hero'
+import Navbar from '../../ui/navbar/Navbar'
 
 const Home = () => {
   return (
-    <section>
+    <section className='dark'>
+      <Navbar/>
+      <main className="max-w-[95%] mx-auto">
         <Hero />
-      </section>
-  )
+      </main>
+    </section>
+  );
 }
 
 export default Home

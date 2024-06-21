@@ -1,19 +1,19 @@
 import React from 'react'
-import {SearchPage, Home } from "./components/pages";
-import Navbar from './components/ui/navbar/Navbar';
+import {SearchPage, Home , Login} from "./components/pages";
 import { Route, Routes } from 'react-router-dom';
-import { SEARCHPAGE } from './components/constants';
+import { SEARCHPAGE, LOGIN } from "./components/constants";
 
 const App = () => {
   return (
-    <main className="max-w-[95%] mx-auto">
-      <Navbar />
 
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path={`${SEARCHPAGE}`} element={<SearchPage />} />
+        <Route path={`${LOGIN}`} element={<Login />} />
       </Routes>
     </main>
+    
   );
 }
 

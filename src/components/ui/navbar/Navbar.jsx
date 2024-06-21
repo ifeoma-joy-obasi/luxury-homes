@@ -1,22 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { icons } from '../../../assets';
+import DropDownMenu from '../dropdownMenu/DropDownMenu'
 const { CircledUserIcon, HamburgerMenuIcon } = icons;
 
 const Navbar = () => {
+
+  const [showDropdownmenu, setShowDropdownmenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleDropDownMenu = () => {
+    setShowDropdownmenu(!showDropdownmenu);
+    setShowMenu((prev) => !prev)
+
+  };
+
   return (
-    <nav className="flex justify-between h-[70px] items-center w-full">
-      <Link
-        to="/"
-        className="text-gray-800 font-palanquin h-10  font-bold text-[18px]"
-      >
-        LuxuryHomes
-      </Link>
-      <div className="h-10 flex gap-2 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md">
-        <CircledUserIcon className="text-[28px]" />
-        <HamburgerMenuIcon className="text-[12px] font-extrabold" />
-      </div>
-    </nav>
+    <>
+      <nav className="max-w-[95%] mx-auto flex justify-between h-[70px] items-center w-full ">
+        <Link
+          to="/"
+          className="text-gray-800 font-palanquin h-10  font-bold text-[18px]"
+        >
+          LuxuryHomes
+        </Link>
+        <div
+          onClick={handleDropDownMenu}
+          className="h-10 flex gap-2 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md"
+        >
+          <CircledUserIcon className="text-[28px]" />
+          <HamburgerMenuIcon className="text-[12px] font-extrabold" />
+        </div>
+      </nav>
+      <DropDownMenu
+        showDropdownmenu={showDropdownmenu}
+        showMenu={showMenu}
+      />
+    </>
   );
 }
 
