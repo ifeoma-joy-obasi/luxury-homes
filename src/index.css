@@ -5,8 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+
+/*hiding the scrollbar for firefox */
+html{
   --speed07:0.7s;
+scrollbar-width: none;
+
 }
 
 * {
@@ -16,8 +20,15 @@
   scroll-behavior: smooth;
 }
 
+/* hide scroll bar but still maintain functionality for chrome safari and opera*/
+body::-webkit-scrollbar{
+display: none;
+}
+
+/* hide scrollbar for Edge, IE*/
 body{
 min-height: 100vh;
+-ms-overflow-style:none;
 }
 
 
@@ -40,11 +51,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .my-custom-border-right::after{
   content: '';
   position: absolute;
-background: #cac9c9;
+background: #c7c7c7;
 top: 12px;
 right: -2px;
-width: 0.2px;
-height: 30px;
+width: 1px;
+height: 40px;
 }
 
 .box-shadow-dropdownmenu{
@@ -52,7 +63,7 @@ box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 .drop-down-menu-lg{
-  @apply hidden bg-white/100 rounded-lg py-3 text-gray-950 w-[200px] md:block text-[0.9rem] font-normal font-montserrat absolute top-16 right-4 z-20 cursor-pointer transition-all
+  @apply hidden bg-white/100 rounded-lg py-4 text-gray-950 w-[235px] md:block text-[1rem] font-medium font-montserrat absolute top-20 right-8 z-20 cursor-pointer transition-all
 }
 
 .drop-down-menu-sm{
@@ -70,7 +81,7 @@ transition: all var(--speed07) ease;
 .close-dropdown-menu-onoutsideclick{
 opacity: 0;
 visibility: hidden;
-transform: translateY(-20px);
+transform: translateY(-22px);
 transition: all var(--speed07) ease;
 }
 
@@ -82,5 +93,23 @@ transition: all var(--speed07) ease;
 visibility: hidden;
 }
 
+.accordion-border{
+  border-top: 1px solid #eeecec;
+}
+
+.custom-trans{
+  transition: all 1s ease;
+}
+
+.work-image{
+  height: 500px;
+  background: url("https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work-image:hover{
+  background-size: -120%;
+}
 
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import HeroImage from '../../../assets/images/hero-img.jpg'
-import { icons } from "../../../assets";
+import HeroImage from '../../../../assets/images/hero-img.jpg'
 const { SearchIcon } = icons;
 import { Link } from "react-router-dom";
-import { SEARCHPAGE } from '../../constants';
+import { SEARCHPAGE } from '../../../constants';
+import { icons } from '../../../../assets';
 
 const Hero = () => {
 
@@ -52,29 +52,29 @@ const Hero = () => {
       />
 
       <div className="absolute w-[90%] top-[50%] left-[50%] translate ">
-        <h1 className="font-palanquin font-bold text-[1.59rem] text-center text-gray-950 md:text-[2rem] md:font-[900]">
+        <h1 className="font-palanquin min-h-6  text-center  text-[2.1rem] font-bold leading-10 tracking-normal md:text-[2.5rem] lg:min-h-12 text-gray-950">
           Comfortable living. Monthly stays. Healthy environment
         </h1>
-        <p className="text-center font-montserrat text-black mt-2 text-[0.95rem] md:text-[1rem] font-[600]">
+        <p className="mb-12 mt-4 h-8  text-center  text-xl font-normal tracking-normal text-black md:mb-6">
           Move-in ready apartments across 500+ cities
         </p>
 
         {/* for small screens */}
-        <form className="bg-white/100 rounded-2xl py-4 px-5 mt-5 md:hidden">
+        <form className="bg-white/100 rounded-2xl py-4 px-5 md:hidden">
           <div className="flex items-center gap-3">
-            <SearchIcon className="text-gray-700" />
+            <SearchIcon className="text-gray-600 text-xl" />
             <Link to={`${SEARCHPAGE}`}>
               <input
                 type="search"
                 name=""
                 id=""
                 placeholder="Enter a destination"
-                className="outline-none text-[0.9rem] w-full text-gray-700 placeholder:text-gray-700"
+                className="outline-none text-[1.1rem] w-full text-gray-700 placeholder:text-gray-600"
               />
             </Link>
           </div>
           <div className="border-[0.5px] border-gray-700/10 mt-3"></div>
-          <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all font-medium">
+          <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all font-medium text-[1.1rem]">
             Search
           </button>
         </form>
@@ -95,24 +95,25 @@ const Hero = () => {
               }) => (
                 <div
                   key={key}
-                  className={`flex flex-col ${itemWidth} pl-5 hover:ring-1 ring-gray-950 hover:rounded-full py-2 transition-all ${myCustomBorderRightClass} cursor-pointer`}
+                  className={`flex flex-col ${itemWidth} pl-5 hover:ring-1 ring-gray-950 hover:rounded-full py-3 transition-all ${myCustomBorderRightClass} cursor-pointer leading-none`}
                 >
-                  <span className="text-[0.7rem] text-gray-900 font-medium font-palanquin">
+                  <span className="text-[0.95rem] text-gray-900 font-medium font-palanquin">
                     {label}
                   </span>
                   <input
                     type={inputType}
                     placeholder={inputPlaceholder}
-                    className="bg-transparent text-[0.7rem] placeholder:text-gray-500 outline-none focus:outline-none placeholder:font-montserrat"
+                    className="bg-transparent text-[0.9rem] placeholder:text-gray-500 outline-none focus:outline-none placeholder:font-montserrat"
                   />
                 </div>
               )
             )}
           </div>
 
-          <button className="bg-gray-700 text-white font-montserrat rounded-full p-2 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[0.9rem] font-medium md:text-[0.8rem] lg:text-[0.9rem]">
+          <button className="bg-gray-700 text-white font-montserrat rounded-full p-3 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[1rem] font-medium md:text-[0.9rem] lg:text-[1rem]">
             Search
           </button>
+
         </form>
       </div>
     </section>

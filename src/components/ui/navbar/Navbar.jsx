@@ -17,19 +17,19 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="max-w-[95%] mx-auto flex justify-between h-[70px] items-center w-full ">
+      <nav className="max-w-[95%] mx-auto flex justify-between h-[80px] items-center w-full ">
         <Link
           to="/"
-          className="text-gray-800 font-palanquin h-10  font-bold text-[18px]"
+          className="text-gray-900 font-palanquin h-8  font-bold text-2xl"
         >
           LuxuryHomes
         </Link>
         <div
           onClick={handleDropDownMenu}
-          className="h-10 flex gap-2 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md"
+          className="h-12 flex gap-4 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md"
         >
-          <CircledUserIcon className="text-[28px]" />
-          <HamburgerMenuIcon className="text-[12px] font-extrabold" />
+          <CircledUserIcon className="text-[34px]" />
+          <HamburgerMenuIcon className="text-[20px] font-extrabold" />
         </div>
       </nav>
       <DropDownMenu
