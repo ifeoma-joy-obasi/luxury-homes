@@ -9,7 +9,12 @@ import { MdStarRate as RatingStarIcon } from "react-icons/md";
 import { LiaCheckCircle as CircleCheckIcon} from "react-icons/lia";
 import { FaRegHeart as HeartIcon } from "react-icons/fa6";
 import { FaChevronLeft as CheveronLeftIcon} from "react-icons/fa6";
-import { FaChevronRight as CheveronRightIcon} from "react-icons/fa6";
+import { FaChevronRight as CheveronRightIcon } from "react-icons/fa6";
+import { FaFacebookF as FacebookIcon } from "react-icons/fa";
+import { RiTwitterXLine as TwitterXlineIcon} from "react-icons/ri";
+import { IoLogoYoutube as YoutubeIcon } from "react-icons/io";
+import { RiLinkedinFill as LinkedinIcon} from "react-icons/ri";
+
 
 export const icons = {
   CircledUserIcon,
@@ -18,10 +23,14 @@ export const icons = {
   CloseIcon,
   ExpandMoreIcon,
   ExpandLessIcon,
-CheveronRightAccordionIcon,
+  CheveronRightAccordionIcon,
   RatingStarIcon,
- CircleCheckIcon,
+  CircleCheckIcon,
   HeartIcon,
   CheveronRightIcon,
   CheveronLeftIcon,
+  FacebookIcon,
+  TwitterXlineIcon,
+  YoutubeIcon,
+  LinkedinIcon,
 };

@@ -10,11 +10,11 @@ const Hero = () => {
   const heroData = [
     {
       key: 1,
-      itemWidth: "w-[30%]",
+      itemWidth: "w-[25%]",
       label: "Location",
       inputType: "text",
       inputPlaceholder: "Enter a destination...",
-      myCustomBorderRightClass: 'my-custom-border-right',
+      myCustomBorderRightClass: "my-custom-border-right",
     },
     {
       key: 2,
@@ -80,8 +80,8 @@ const Hero = () => {
         </form>
 
         {/* for large screens */}
-        <form className="hidden bg-white/100 md:flex items-center w-[85%] rounded-full pr-2 mx-auto mt-4 md:w-[100%] lg:w-[85%] ">
-          <div className="flex w-[90%] items-center gap-[4px]">
+        <form className="hidden bg-white/100 md:flex items-center rounded-full mx-auto md:w-[100%] lg:w-[96%] h-[60px] pr-2">
+          <div className="flex md:w-[90%] lg:w-[100%] items-center">
             {/* maping over data */}
 
             {heroData.map(
@@ -95,25 +95,26 @@ const Hero = () => {
               }) => (
                 <div
                   key={key}
-                  className={`flex flex-col ${itemWidth} pl-5 hover:ring-1 ring-gray-950 hover:rounded-full py-3 transition-all ${myCustomBorderRightClass} cursor-pointer leading-none`}
+                  className={`flex flex-col ${itemWidth} hover:ring-1  ring-gray-950 hover:rounded-full  md:py-4 lg:py-3 md:pl-5 lg:pl-5 transition-all ${myCustomBorderRightClass} cursor-pointer leading-none`}
                 >
-                  <span className="text-[0.95rem] text-gray-900 font-medium font-palanquin">
+                  <span className="md:text-[0.8rem] lg:text-[0.9rem] text-gray-900 font-medium font-palanquin">
                     {label}
                   </span>
                   <input
                     type={inputType}
                     placeholder={inputPlaceholder}
-                    className="bg-transparent text-[0.9rem] placeholder:text-gray-500 outline-none focus:outline-none placeholder:font-montserrat"
+                    className="bg-transparent md:text-[0.7rem] lg:text-[0.9rem] placeholder:text-gray-500 outline-none focus:outline-none placeholder:font-montserrat"
                   />
                 </div>
               )
             )}
           </div>
 
-          <button className="bg-gray-700 text-white font-montserrat rounded-full p-3 hover:bg-gray-500 transition-all flex-2 w-[10%] text-[1rem] font-medium md:text-[0.9rem] lg:text-[1rem]">
-            Search
-          </button>
-
+          <div className="md:w-[10%]">
+            <button className="bg-gray-700 text-white font-montserrat rounded-full p-3 hover:bg-gray-500 transition-all flex-2  md:text-[0.8rem] font-medium lg:text-[1rem] w-[100%]">
+              Search
+            </button>
+          </div>
         </form>
       </div>
     </section>

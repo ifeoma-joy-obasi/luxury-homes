@@ -59,11 +59,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .my-custom-border-right::after{
-  content: '';
-  position: absolute;
+content: '';
+position: absolute;
 background: #c7c7c7;
 top: 12px;
-right: -2px;
+right: 0px;
 width: 1px;
 height: 40px;
 }

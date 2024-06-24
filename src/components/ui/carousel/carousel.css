@@ -74,10 +74,19 @@ margin: 1px;
 
 }
 
-@media(min-width:45em){
+@media(min-width:30em){
 .slick-arrow.slick-prev{
 top: -60px;
-left: 88%;
+left: 82%;
+
+}
+
+}
+
+@media(min-width:35em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 83%;
 
 }
 
@@ -90,12 +99,13 @@ width:40px;
 }
 }
 
-@media(min-width:55em){
+@media(min-width:40em){
 .slick-arrow.slick-prev{
 top: -60px;
-left: 88.5%;
+left: 85%;
 
 }
+
 
 .arrows{
 height:20px;
@@ -104,6 +114,22 @@ margin: 1px;
 
 }
 
+}
+
+@media(min-width:50em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 88%;
+
+}
+}
+
+@media(min-width:60em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 89%;
+
+}
 }
 
 @media(min-width:70em){

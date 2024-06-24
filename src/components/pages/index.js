@@ -7,6 +7,7 @@ import Accordion from '../ui/accordion/Accordion'
 import WorkWithUs from './home/workwithus/WorkWithUs'
 import CustomerReviews from './home/customerReviews/CustomerReviews'
 import Hero from './home/hero/Hero'
+import Footer from '../ui/footer/Footer'
 
 
 
@@ -23,4 +24,5 @@ export {
   Accordion,
   CustomerReviews,
   WorkWithUs,
+  Footer,
 };

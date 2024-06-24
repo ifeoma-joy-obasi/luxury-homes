@@ -6,6 +6,7 @@ import {
   Accordion,
   CustomerReviews,
   WorkWithUs,
+  Footer,
 } from "../../pages/index";
 
 const Home = () => {
@@ -27,10 +28,13 @@ const Home = () => {
         </section>
 
         <section className="mt-20">
-          <WorkWithUs/>
+          <WorkWithUs />
         </section>
-
       </main>
+
+      <footer className="mt-20">
+        <Footer />
+      </footer>
     </section>
   );
 }
