@@ -10,14 +10,10 @@ import {
 
 const Home = () => {
   return (
-    <section className="dark">
+    <section>
       <Navbar />
       <main className="max-w-[95%] mx-auto">
         <Hero />
-        <section className="mt-20">
-          <Carousel />
-        </section>
-
         <section className="mt-20">
           <Carousel />
         </section>

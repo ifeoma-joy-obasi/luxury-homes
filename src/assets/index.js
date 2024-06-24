@@ -4,10 +4,12 @@ import { IoSearchOutline as SearchIcon } from "react-icons/io5";
 import { IoCloseOutline as CloseIcon } from "react-icons/io5";
 import { MdOutlineExpandMore as ExpandMoreIcon } from "react-icons/md";
 import { MdOutlineExpandLess as ExpandLessIcon } from "react-icons/md";
-import { GrFormNext as CheveronRight } from "react-icons/gr";
+import { GrFormNext as CheveronRightAccordionIcon } from "react-icons/gr";
 import { MdStarRate as RatingStarIcon } from "react-icons/md";
-import { LiaCheckCircle as CircleCheck} from "react-icons/lia";
-
+import { LiaCheckCircle as CircleCheckIcon} from "react-icons/lia";
+import { FaRegHeart as HeartIcon } from "react-icons/fa6";
+import { FaChevronLeft as CheveronLeftIcon} from "react-icons/fa6";
+import { FaChevronRight as CheveronRightIcon} from "react-icons/fa6";
 
 export const icons = {
   CircledUserIcon,
@@ -16,7 +18,10 @@ export const icons = {
   CloseIcon,
   ExpandMoreIcon,
   ExpandLessIcon,
-  CheveronRight,
+CheveronRightAccordionIcon,
   RatingStarIcon,
-  CircleCheck,
+ CircleCheckIcon,
+  HeartIcon,
+  CheveronRightIcon,
+  CheveronLeftIcon,
 };

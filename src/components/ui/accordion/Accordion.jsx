@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import { icons } from '../../../assets'
-const { ExpandMoreIcon, ExpandLessIcon,CheveronRight } = icons;
+const { ExpandMoreIcon, ExpandLessIcon,CheveronRightAccordionIcon } = icons;
 
 
 const Accordion = () => {
@@ -118,7 +118,7 @@ const Accordion = () => {
 
       <div className="flex space-x-2 underline font-palanquin text-gray-700 hover:text-gray-500 transition-all mt-5">
         <Link className="text-xl">View all</Link>
-        <CheveronRight className="text-3xl" />
+        <CheveronRightAccordionIcon className="text-3xl" />
       </div>
     </section>
   );

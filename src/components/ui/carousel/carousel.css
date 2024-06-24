@@ -1,0 +1,116 @@
+figure{
+    overflow: hidden;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.image .zoom-in img{
+    transition: scale(1);
+    transition: 0.6s ease-in-out;
+
+}
+
+.image .zoom-in:hover img{
+transform: scale(1.3);
+}
+
+.carousel-wrapper .image .zoom-in:hover p{
+text-decoration: underline;
+}
+
+/* react-slick global styles for carousel */
+.slick-slide > div{
+  margin: 0 10px;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev{
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100%;
+opacity: 0.8;
+height:35px;
+width:35px;
+border: 1px solid var(--light-gray-size-border-clr);
+}
+
+.slick-arrow.slick-prev{
+top: -60px;
+left: 79%;
+
+}
+
+.slick-arrow.slick-next{
+right: 0px;
+top: -60px;
+}
+
+
+
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover
+{
+    border: 1px solid black;
+    opacity:1;
+}
+
+
+.slick-prev::before,.slick-next::before{
+   display:none;
+
+    }
+
+.arrows{
+height:15px;
+width:15px;
+margin: 1px;
+
+}
+
+@media(min-width:45em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 88%;
+
+}
+
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev{
+height:40px;
+width:40px;
+
+}
+}
+
+@media(min-width:55em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 88.5%;
+
+}
+
+.arrows{
+height:20px;
+width:20px;
+margin: 1px;
+
+}
+
+}
+
+@media(min-width:70em){
+.slick-arrow.slick-prev{
+top: -60px;
+left: 92%;
+
+}
+
+}

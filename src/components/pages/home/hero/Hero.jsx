@@ -53,10 +53,10 @@ const Hero = () => {
 
       <div className="absolute w-[90%] top-[50%] left-[50%] translate ">
         <h1 className="font-palanquin min-h-6  text-center  text-[2.1rem] font-bold leading-10 tracking-normal md:text-[2.5rem] lg:min-h-12 text-gray-950">
-          Comfortable living. Monthly stays. Healthy environment
+          Comfortable living. Lavish decor. Healthy environment.
         </h1>
         <p className="mb-12 mt-4 h-8  text-center  text-xl font-normal tracking-normal text-black md:mb-6">
-          Move-in ready apartments across 500+ cities
+          Move-in ready Residence across 100+ cities
         </p>
 
         {/* for small screens */}

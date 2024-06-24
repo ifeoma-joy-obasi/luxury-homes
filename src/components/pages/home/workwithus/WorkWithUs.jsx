@@ -1,7 +1,7 @@
 import React from 'react'
 import "../workwithus/work-with-us.css"
 import { icons } from '../../../../assets';
-const { CircleCheck } = icons;
+const { CircleCheckIcon } = icons;
 
 const WorkWithUs = () => {
 
@@ -13,13 +13,11 @@ const WorkWithUs = () => {
       header: "Manage your team's accommodation",
       subHeader:
         "Find ready-to-move-in apartments for your employees and save costs & time.",
-      points: {
-        pointOne:
-          "Free booking platform with your company logo tailored to your needs",
-        pointTwo: " Flexible lease agreements and centralised payment solution",
-        pointThree:
-          "Dedicated Account Managers to support you during therelocation process",
-      },
+      points: [
+        "Free booking platform with your company logo tailored to your needs",
+        "Flexible lease agreements and centralised payment solution",
+        "Dedicated Account Managers to support you during therelocation process",
+      ],
       buttonLabel: "Get a demo",
     },
     {
@@ -29,12 +27,11 @@ const WorkWithUs = () => {
       header: " Rent your property with Luxuryhomes",
       subHeader:
         " Create your listings for free and secure bookings from high-quality tenants.",
-      points: {
-        pointOne: " Quick and easy process with professional assistance",
-        pointTwo: " High occupancy rate guaranteed with worldwide visibility",
-        pointThree:
+      points: [
+          "Quick and easy process with professional assistance",
+          "High occupancy rate guaranteed with worldwide visibility",
           "Automatically insured and protection from last-minute cancellations",
-      },
+      ],
       buttonLabel: "Start listing",
     },
   ];
@@ -47,10 +44,10 @@ const WorkWithUs = () => {
         Work With Us
       </h1>
 
-      <section className="flex gap-8 flex-col md:flex-row flex-1">
+      <section className="flex w-full justify-between flex-col md:flex-row flex-1">
         {workwithusData.map(
           ({ key, src, alt, header, subHeader, points, buttonLabel }) => (
-            <div className="image" key={key}>
+            <div className="image w-full mb-8 md:w-[48.5%]" key={key}>
               <div className="zoom-in">
                 {/* image wrapper start */}
                 <figure className="rounded-t-xl">
@@ -68,26 +65,14 @@ const WorkWithUs = () => {
                     </p>
 
                     <div className="mt-4 font-montserrat font-medium">
-                      <div className="flex items-center mt-4">
-                        <div className="mr-3 self-start">
-                          <CircleCheck className="text-[28px]" />
+                      {points.map((point) => (
+                        <div key={point} className="flex items-center mt-4">
+                          <div className="mr-3 self-start">
+                            <CircleCheckIcon className="text-[28px]" />
+                          </div>
+                          <p className="text-[1.1rem]">{point}</p>
                         </div>
-                        <p className="text-[1.1rem]">{points.pointOne}</p>
-                      </div>
-
-                      <div className="flex items-center mt-4">
-                        <div className="mr-3 self-start">
-                          <CircleCheck className="text-[28px]" />
-                        </div>
-                        <p className="text-[1.1rem]">{points.pointTwo}</p>
-                      </div>
-
-                      <div className="flex items-center mt-4">
-                        <div className="mr-3 self-start">
-                          <CircleCheck className="text-[28px]" />
-                        </div>
-                        <p className="text-[1.1rem]">{points.pointThree}</p>
-                      </div>
+                      ))}
                     </div>
                   </div>
 

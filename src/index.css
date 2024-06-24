@@ -10,6 +10,7 @@
 html{
   --speed07:0.7s;
 scrollbar-width: none;
+--light-gray-size-border-clr:#cacaca;
 
 }
 
@@ -20,14 +21,19 @@ scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
+@layer base {
+
+
 /* hide scroll bar but still maintain functionality for chrome safari and opera*/
 body::-webkit-scrollbar{
 display: none;
+
 }
 
 /* hide scrollbar for Edge, IE*/
 body{
 min-height: 100vh;
+max-width:100%;
 -ms-overflow-style:none;
 }
 
@@ -38,6 +44,10 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+
+}
+
+
 
 @layer components {
 .translate{
