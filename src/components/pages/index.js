@@ -8,8 +8,10 @@ import WorkWithUs from './home/workwithus/WorkWithUs'
 import CustomerReviews from './home/customerReviews/CustomerReviews'
 import Hero from './home/hero/Hero'
 import Footer from '../ui/footer/Footer'
-
-
+import ProductList from './product-list/ProductList'
+import SinglePage from './singlePage/SinglePage'
+import Filter from './product-list/filter/Filter'
+import Card from './product-list/card/Card'
 
 
 
@@ -25,4 +27,8 @@ export {
   CustomerReviews,
   WorkWithUs,
   Footer,
+  ProductList,
+  SinglePage,
+  Filter,
+  Card,
 };

@@ -1,7 +1,13 @@
 import React from 'react'
-import {SearchPage, Home , Login} from "./components/pages";
+import {
+  SearchPage,
+  Home,
+  Login,
+  ProductList,
+  SinglePage,
+} from "./components/pages";
 import { Route, Routes } from 'react-router-dom';
-import { SEARCHPAGE, LOGIN, } from "./components/constants";
+import { SEARCHPAGE, LOGIN, PRODUCTLIST } from "./components/constants";
 
 const App = () => {
   return (
@@ -10,6 +16,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path={`${SEARCHPAGE}`} element={<SearchPage />} />
         <Route path={`${LOGIN}`} element={<Login />} />
+        <Route path={`${PRODUCTLIST}`} element={<ProductList />} />
+        <Route path="/:id" element={<SinglePage />} />
       </Routes>
     </main>
   );

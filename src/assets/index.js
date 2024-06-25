@@ -7,7 +7,7 @@ import { MdOutlineExpandLess as ExpandLessIcon } from "react-icons/md";
 import { GrFormNext as CheveronRightAccordionIcon } from "react-icons/gr";
 import { MdStarRate as RatingStarIcon } from "react-icons/md";
 import { LiaCheckCircle as CircleCheckIcon} from "react-icons/lia";
-import { FaRegHeart as HeartIcon } from "react-icons/fa6";
+import { FiHeart as HeartIcon } from "react-icons/fi";
 import { FaChevronLeft as CheveronLeftIcon} from "react-icons/fa6";
 import { FaChevronRight as CheveronRightIcon } from "react-icons/fa6";
 import { FaFacebookF as FacebookIcon } from "react-icons/fa";
