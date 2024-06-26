@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="max-w-[95%] mx-auto flex justify-between h-[80px] items-center w-full ">
+      <nav className="max-w-[95%] mx-auto flex justify-between h-[var(--navbar-height)] items-center w-full ">
         <Link
           to="/"
           className="text-gray-900 font-palanquin h-8  font-bold text-2xl"
@@ -32,10 +32,7 @@ const Navbar = () => {
           <HamburgerMenuIcon className="text-[20px] font-extrabold" />
         </div>
       </nav>
-      <DropDownMenu
-        showDropdownmenu={showDropdownmenu}
-        showMenu={showMenu}
-      />
+      <DropDownMenu showDropdownmenu={showDropdownmenu} showMenu={showMenu} />
     </>
   );
 }

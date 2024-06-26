@@ -3,9 +3,6 @@
     transition: 0.6s ease-in-out;
 }
 
-.cards .card-zoomin-hover:hover img{
-}
-
 .cards .card-zoomin-hover:hover .card-title{
 text-decoration: underline;
 

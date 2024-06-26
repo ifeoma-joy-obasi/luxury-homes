@@ -12,6 +12,8 @@ import ProductList from './product-list/ProductList'
 import SinglePage from './singlePage/SinglePage'
 import Filter from './product-list/filter/Filter'
 import Card from './product-list/card/Card'
+import Map from './product-list/map/Map'
+import Pin from './product-list/map/pin/Pin'
 
 
 
@@ -31,4 +33,6 @@ export {
   SinglePage,
   Filter,
   Card,
+  Map,
+  Pin,
 };
