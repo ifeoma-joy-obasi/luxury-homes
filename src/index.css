@@ -123,4 +123,7 @@ visibility: hidden;
   background-size: -120%;
 }
 
+.indent-placeholder{
+  text-indent: 35px;
+}
 }

@@ -14,7 +14,7 @@ import Filter from './product-list/filter/Filter'
 import Card from './product-list/card/Card'
 import Map from './product-list/map/Map'
 import Pin from './product-list/map/pin/Pin'
-
+import SearchFilterInput from './product-list/filter/searchFilterInput/SearchFilterInput'
 
 
 
@@ -35,4 +35,5 @@ export {
   Card,
   Map,
   Pin,
+  SearchFilterInput,
 };

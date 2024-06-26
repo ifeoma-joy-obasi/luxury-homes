@@ -13,7 +13,8 @@ import { FaChevronRight as CheveronRightIcon } from "react-icons/fa6";
 import { FaFacebookF as FacebookIcon } from "react-icons/fa";
 import { RiTwitterXLine as TwitterXlineIcon} from "react-icons/ri";
 import { IoLogoYoutube as YoutubeIcon } from "react-icons/io";
-import { RiLinkedinFill as LinkedinIcon} from "react-icons/ri";
+import { RiLinkedinFill as LinkedinIcon } from "react-icons/ri";
+import { GrCircleInformation as SponsoredIcon } from "react-icons/gr";
 
 
 export const icons = {
@@ -33,4 +34,5 @@ export const icons = {
   TwitterXlineIcon,
   YoutubeIcon,
   LinkedinIcon,
+  SponsoredIcon,
 };

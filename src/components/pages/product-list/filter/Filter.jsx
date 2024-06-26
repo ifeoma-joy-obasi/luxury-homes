@@ -1,7 +1,8 @@
 import React from 'react'
-import FilterIcon from "../../../../assets/icons/filter.svg"
+import {FilterIcon} from '../../../../assets/icons/index'
 import { icons } from '../../../../assets';
 const { ExpandMoreIcon, SearchIcon } = icons;
+import {SearchFilterInput} from "../../../pages/index"
 
 const Filter = () => {
   return (
@@ -10,16 +11,10 @@ const Filter = () => {
         Search results for <b>London</b>
       </h1>
       <div>
-        <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col gap-2">
           <label htmlFor="city">Location</label>
-          <input
-            type="text"
-            id="city"
-            name="city"
-            placeholder="city location"
-            className=" p-3 border-[#e0e0e0] border rounded-[5px] text-[0.9rem] focus-within:outline-none"
-          />
-        </div>
+          <SearchFilterInput/>
+         </div>
       </div>
       <div>
         <div className="flex gap-[1.5em] mt-2 text-gray-800 cursor-pointer font-montserrat">
