@@ -109,7 +109,7 @@ visibility: hidden;
 }
 
 .custom-trans{
-  transition: all 1s ease;
+  transition: all 0.2s ease-in;
 }
 
 .work-image{
