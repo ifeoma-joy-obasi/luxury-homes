@@ -67,11 +67,10 @@ const Footer = () => {
               </h2>
               <ul className="space-y-4 cursor-pointer list-none">
                 {footerLinks.map(({ linkLabel, to }) => (
-                  <li
-                    key={linkLabel}
-                    className="font-montserrat text-white/85 font-medium hover:text-white transition-all"
-                  >
-                    <Link to={to}>{linkLabel}</Link>
+                  <li key={linkLabel} className="font-montserrat font-medium">
+                    <Link to={to} className="hover:text-white transition-all">
+                      {linkLabel}
+                    </Link>
                   </li>
                 ))}
               </ul>
