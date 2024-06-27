@@ -18,7 +18,7 @@ const Map = ({items}) => {
       />
           {items.map((item) => (
               <Pin item={item} key={item.id } />
-     ))}
+          ))}
     </MapContainer>
   );
 }

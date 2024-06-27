@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Filter, Navbar,Map } from "../../pages/index"
+import { Card, Filter,Map } from "../../pages/index"
 import { listData } from '../../lib/Data';
 
 const ProductList = () => {
@@ -8,7 +8,6 @@ const ProductList = () => {
 
   return (
     <section>
-      <Navbar />
       <section className="border-t border-[#e0e0e0] min-h-full">
         <main className="max-w-[95%] mx-auto ">
           <section className="flex">

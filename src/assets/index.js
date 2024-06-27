@@ -15,6 +15,10 @@ import { RiTwitterXLine as TwitterXlineIcon} from "react-icons/ri";
 import { IoLogoYoutube as YoutubeIcon } from "react-icons/io";
 import { RiLinkedinFill as LinkedinIcon } from "react-icons/ri";
 import { GrCircleInformation as SponsoredIcon } from "react-icons/gr";
+import { BiArrowBack as BackArrowIcon} from "react-icons/bi";
+import { IoMdHeartEmpty as SaveIcon} from "react-icons/io";
+import { FiShare2 as ShareIcon } from "react-icons/fi";
+import { SlLocationPin as LocationPinIcon } from "react-icons/sl";
 
 
 export const icons = {
@@ -35,4 +39,8 @@ export const icons = {
   YoutubeIcon,
   LinkedinIcon,
   SponsoredIcon,
+  BackArrowIcon,
+  SaveIcon,
+  ShareIcon,
+  LocationPinIcon,
 };

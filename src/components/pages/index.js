@@ -1,4 +1,3 @@
-import SearchPage from './searchPage/SearchPage'
 import Home from './home/Home'
 import Login from './login/Login'
 import Carousel from '../ui/carousel/Carousel'
@@ -15,12 +14,12 @@ import Card from './product-list/card/Card'
 import Map from './product-list/map/Map'
 import Pin from './product-list/map/pin/Pin'
 import SearchFilterInput from './product-list/filter/searchFilterInput/SearchFilterInput'
+import ImageSlider from './singlePage/single-product-slider/ImageSlider'
 
 
 
 export {
   Hero,
-  SearchPage,
   Home,
   Login,
   Carousel,
@@ -36,4 +35,5 @@ export {
   Map,
   Pin,
   SearchFilterInput,
+  ImageSlider,
 };

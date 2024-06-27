@@ -16,7 +16,7 @@ const Card = ({item}) => {
           >
             <img
               src={item.img}
-              alt="hello there"
+              alt={item.title}
               className="block italic w-full h-full  rounded-tl-md rounded-bl-md object-cover"
             />
           </Link>

@@ -2,7 +2,6 @@ import React from 'react'
 import HeroImage from '../../../../assets/images/hero-img.jpg'
 const { SearchIcon } = icons;
 import { Link } from "react-router-dom";
-import { SEARCHPAGE } from '../../../constants';
 import { icons } from '../../../../assets';
 
 const Hero = () => {
@@ -63,7 +62,7 @@ const Hero = () => {
         <form className="bg-white/100 rounded-2xl py-4 px-5 md:hidden">
           <div className="flex items-center gap-3">
             <SearchIcon className="text-gray-600 text-xl" />
-            <Link to={`${SEARCHPAGE}`}>
+            <div>
               <input
                 type="search"
                 name=""
@@ -71,7 +70,7 @@ const Hero = () => {
                 placeholder="Enter a destination"
                 className="outline-none text-[1.1rem] w-full text-gray-700 placeholder:text-gray-600"
               />
-            </Link>
+            </div>
           </div>
           <div className="border-[0.5px] border-gray-700/10 mt-3"></div>
           <button className="bg-gray-700 text-white font-montserrat w-full rounded-full mt-3 p-3 hover:bg-gray-500 transition-all font-medium text-[1.1rem]">

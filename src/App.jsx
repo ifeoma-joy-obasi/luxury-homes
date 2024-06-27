@@ -1,20 +1,20 @@
 import React from 'react'
 import {
-  SearchPage,
   Home,
   Login,
   ProductList,
   SinglePage,
+  Navbar,
 } from "./components/pages";
 import { Route, Routes } from 'react-router-dom';
-import { SEARCHPAGE, LOGIN, PRODUCTLIST } from "./components/constants";
+import { LOGIN, PRODUCTLIST } from "./components/constants";
 
 const App = () => {
   return (
     <main>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path={`${SEARCHPAGE}`} element={<SearchPage />} />
         <Route path={`${LOGIN}`} element={<Login />} />
         <Route path={`${PRODUCTLIST}`} element={<ProductList />} />
         <Route path="/:id" element={<SinglePage />} />

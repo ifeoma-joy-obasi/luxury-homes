@@ -2,7 +2,6 @@ import React from 'react'
 import {
   Hero,
   Carousel,
-  Navbar,
   Accordion,
   CustomerReviews,
   WorkWithUs,
@@ -12,7 +11,6 @@ import {
 const Home = () => {
   return (
     <section>
-      <Navbar />
       <main className="max-w-[95%] mx-auto">
         <Hero />
         <section className="mt-20">
