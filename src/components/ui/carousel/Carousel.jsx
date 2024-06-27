@@ -8,51 +8,45 @@ const {CheveronLeftIcon,CheveronRightIcon } = icons;
 
 const CarouselData = [
   {
-    key: 1,
+    id: 9,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: " 8,000",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 2,
+    id: 10,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: " 12,300",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 3,
+    id: 11,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: " 9,200",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 4,
+    id: 12,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: " 5,000",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 5,
+    id: 13,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: "7000",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 6,
+    id: 14,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: "6000",
     houseLocation: "House in sadinia, italy",
   },
   {
-    key: 7,
+    id: 15,
     src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
-    houseLocation: "House in sadinia, italy",
-  },
-  {
-    key: 8,
-    src: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600",
-    price: " 12, 300,000",
+    price: "6500",
     houseLocation: "House in sadinia, italy",
   },
 ];
@@ -99,12 +93,12 @@ const Carousel = () => {
   return (
     <section className="carousel-wrapper w-full m-auto">
       <h2 className="font-palanquin text-3xl text-gray-900 font-medium">
-        Listings You'll Love
+        Apartments You'll Love
       </h2>
       <div className="mt-10 ">
         <Slider {...settings}>
-          {CarouselData.map(({ key, src, price, houseLocation }) => (
-            <div className="image" key={key}>
+          {CarouselData.map(({ id, src, price, houseLocation }) => (
+            <a href={`/${id}`}  className="image" key={id}>
               <div className="zoom-in">
 
                 {/* image wrapper start */}
@@ -115,14 +109,14 @@ const Carousel = () => {
 
                 <div className='mt-3'>
                   <p className="font-medium text-gray-900 font-palanquin mb-1 leading-tight">
-                    ${price}
+                    $ {price} / month
                   </p>
                   <p className="text-gray-600 font-montserrat">
                     {houseLocation}
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </Slider>
       </div>

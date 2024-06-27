@@ -7,6 +7,7 @@ const ImageSlider = ({ images, title }) => {
 
   const [imageIndex, setImageIndex] = useState(null);
 
+
   const changeSlide = (direction) => {
     if (direction === "left") {
       if (imageIndex === 0) {
@@ -24,16 +25,19 @@ const ImageSlider = ({ images, title }) => {
 
   }
 
+
+
+
   return (
     <section className="w-full flex h-[350px] gap-5">
       {imageIndex !== null && (
         /*full image slider */
-        <div className="fixed w-[100vw] h-[100%] top-0 left-0 bg-black bottom-0 flex p-4">
-          <div
-            onClick={() => changeSlide("left")}
-            className="flex-1 cursor-pointer flex justify-center items-center"
-          >
-            <CheveronLeftIcon className="text-white-400 hover:text-white h-20 flex items-center justify-center" />
+        <div className="fixed w-[100vw] h-[100%] top-0 left-0 bg-black bottom-0 flex p-4 z-[100] overflow-hidden">
+          <div className="flex-1 cursor-pointer flex justify-center items-center">
+            <CheveronLeftIcon
+              onClick={() => changeSlide("left")}
+              className="text-white-400 hover:text-white h-20 flex items-center justify-center"
+            />
           </div>
           <div className="flex-[10] m-auto">
             <img
@@ -42,11 +46,11 @@ const ImageSlider = ({ images, title }) => {
               className="max-w-full min-h-full object-cover rounded-md"
             />
           </div>
-          <div
-            onClick={() => changeSlide("right")}
-            className="flex-1 cursor-pointer flex justify-center items-center"
-          >
-            <CheveronRightIcon className="text-white-400 hover:text-white h-20 flex items-center justify-center" />
+          <div className="flex-1 cursor-pointer flex justify-center items-center">
+            <CheveronRightIcon
+              onClick={() => changeSlide("right")}
+              className="text-white-400 hover:text-white h-20 flex items-center justify-center"
+            />
           </div>
           <div
             className="absolute top-0 right-0 cursor-pointer"
