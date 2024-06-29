@@ -20,11 +20,14 @@ const ProductList = () => {
                   <Card key={item.id} item={item} />
                 ))}
               </div>
+
             </div>
             {/* map container */}
-            <div className="flex-[2] min-h-full max-w-full rounded-xl">
-              <Map items={data} />
-            </div>
+
+              <div className="flex-[2] min-h-full max-w-full rounded-xl">
+                <Map items={data} />
+              </div>
+           
           </section>
         </main>
       </section>

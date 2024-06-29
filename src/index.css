@@ -74,7 +74,7 @@ box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 .drop-down-menu-lg{
-  @apply hidden bg-white/100 rounded-lg py-4 text-gray-950 w-[235px] md:block text-[1rem] font-medium font-montserrat absolute top-20 right-8 z-20 cursor-pointer transition-all
+  @apply hidden bg-white/100 rounded-lg py-4 text-gray-950 w-[250px] md:block text-[1rem] font-medium font-montserrat absolute top-20 right-8 z-20 cursor-pointer transition-all
 }
 
 .drop-down-menu-sm{

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../carousel/carousel.css"
 import { icons } from '../../../assets';
+import { PRODUCTLIST } from '../../constants';
 const {CheveronLeftIcon,CheveronRightIcon } = icons;
 
 const CarouselData = [
@@ -98,7 +99,7 @@ const Carousel = () => {
       <div className="mt-10 ">
         <Slider {...settings}>
           {CarouselData.map(({ id, src, price, houseLocation }) => (
-            <a href={`/${id}`}  className="image" key={id}>
+            <a href={`${PRODUCTLIST}/${id}`}  className="image" key={id}>
               <div className="zoom-in">
 
                 {/* image wrapper start */}

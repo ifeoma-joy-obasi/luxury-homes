@@ -49,19 +49,19 @@ const DropDownMenu = ({ showDropdownmenu, showMenu }) => {
         }`}
       >
         <Link to={`${LOGIN}`}>
-          <li className="p-5 hover:bg-gray-100/70 hover:text-gray-600">
+          <li className="p-4 hover:bg-gray-100/70 hover:text-gray-600">
             Login
           </li>
         </Link>
 
         <Link>
-          <li className="p-3 hover:bg-gray-100/70 hover:text-gray-600">
+          <li className="p-4 hover:bg-gray-100/70 hover:text-gray-600">
             Register
           </li>
         </Link>
 
         <Link>
-          <li className="p-3 hover:bg-gray-100/70 hover:text-gray-600">
+          <li className="p-4 hover:bg-gray-100/70 hover:text-gray-600">
             Whishlishts
           </li>
         </Link>
@@ -69,7 +69,7 @@ const DropDownMenu = ({ showDropdownmenu, showMenu }) => {
         <div className="hover:bg-slate-100 border border-b-gray-950/5"></div>
 
         <Link>
-          <li className="p-3 hover:bg-gray-100/70 hover:text-gray-600">Help</li>
+          <li className="p-4 hover:bg-gray-100/70 hover:text-gray-600">Help</li>
         </Link>
       </ul>
 

@@ -15,7 +15,9 @@ import Map from './product-list/map/Map'
 import Pin from './product-list/map/pin/Pin'
 import SearchFilterInput from './product-list/filter/searchFilterInput/SearchFilterInput'
 import ImageSlider from './singlePage/single-product-slider/ImageSlider'
-
+import NotFound from './notFound/NotFound'
+import LandlordsLogin from './login/landlordsLogin/LandlordsLogin'
+import GuestLogin from './login/guestlogin/GuestLogin'
 
 
 export {
@@ -36,4 +38,7 @@ export {
   Pin,
   SearchFilterInput,
   ImageSlider,
+  NotFound,
+  LandlordsLogin,
+  GuestLogin,
 };
