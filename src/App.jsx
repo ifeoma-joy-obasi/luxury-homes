@@ -8,13 +8,14 @@ import {
   NotFound,
   LandlordsLogin,
   GuestLogin,
+  ForgotPassword,
 } from "./components/pages";
 import { Route, Routes } from 'react-router-dom';
 import {
   LOGIN,
   PRODUCTLIST,
   LANDLORDSLOGINPAGE,
-
+  FORGOTPASSWORD,
 } from "./components/constants";
 
 const App = () => {
@@ -29,6 +30,10 @@ const App = () => {
           <Route index element={<GuestLogin />} />
           <Route path={`${LANDLORDSLOGINPAGE}`} element={<LandlordsLogin />} />
         </Route>
+        <Route
+          path={`${LOGIN}/${FORGOTPASSWORD}`}
+          element={<ForgotPassword />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>

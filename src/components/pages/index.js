@@ -18,6 +18,9 @@ import ImageSlider from './singlePage/single-product-slider/ImageSlider'
 import NotFound from './notFound/NotFound'
 import LandlordsLogin from './login/landlordsLogin/LandlordsLogin'
 import GuestLogin from './login/guestlogin/GuestLogin'
+import ForgotPassword from './forgotPassword/ForgotPassword'
+
+
 
 
 export {
@@ -41,4 +44,5 @@ export {
   NotFound,
   LandlordsLogin,
   GuestLogin,
+  ForgotPassword,
 };

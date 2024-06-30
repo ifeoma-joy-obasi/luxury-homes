@@ -78,12 +78,12 @@ const GuestLogin = () => {
         </div>
 
         <div>
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 mt-4 max-sm:justify-center">
             <p className="font-medium text-[1.09rem]">Great</p>
             <p>
               <span className="text-xl font-medium">4.2</span> out of 5
             </p>
-            <div className="flex gap-1 font-montserrat items-center mb-5">
+            <div className="flex  gap-1 font-montserrat items-center mb-5 ">
               <RatingStarIcon className="text-2xl text-[#00b67a] self-start" />
               <p className=" font-medium text-xl">Trustpilot</p>
             </div>

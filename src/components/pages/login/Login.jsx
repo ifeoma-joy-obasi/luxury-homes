@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import { LANDLORDSLOGINPAGE, LOGIN } from "../../constants";
+import { FORGOTPASSWORD, LANDLORDSLOGINPAGE, LOGIN } from "../../constants";
 import { AppleIcon, FaceBookIcon, GoogleIcon, LinkedIn } from '../../../assets/icons';
 
 
@@ -77,10 +77,10 @@ const Login = () => {
   return (
     <section className="h-[100vh] border-t">
       <main>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row max-sm:gap-5">
           {/* form */}
           <div className="flex-[3]">
-            <div className="w-[80%] md:w-[60%] m-auto flex justify-center flex-col mt-6 ">
+            <div className="w-[80%] md:w-[65%] m-auto flex justify-center flex-col mt-6 ">
               <p className="text-center text-gray-600 font-palanquin mb-4">
                 Who are you?
               </p>
@@ -111,7 +111,7 @@ const Login = () => {
                 ({ id, src, alt, width, height, btnLabel, className }) => (
                   <button
                     key={id}
-                    className={`flex ${className} font-montserrat w-full rounded-md mt-3 p-3  transition-all font-medium gap-2 items-center text-[1.1rem] justify-center` }
+                    className={`flex ${className} font-montserrat w-full rounded-md mt-3 p-4  transition-all font-medium gap-2 items-center text-[1.1rem] justify-center`}
                   >
                     <img src={src} alt={alt} width={width} height={height} />
                     <p>{btnLabel}</p>
@@ -119,8 +119,10 @@ const Login = () => {
                 )
               )}
 
-
-              <Link className="text-center font-montserrat text-gray-900 my-4">
+              <Link
+                to={`/${LOGIN}/${FORGOTPASSWORD}`}
+                className="text-center font-montserrat text-gray-900 mt-4 mb-8"
+              >
                 Forgot password?
               </Link>
             </div>
