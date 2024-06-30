@@ -80,7 +80,7 @@ const Login = () => {
         <div className="flex flex-col lg:flex-row">
           {/* form */}
           <div className="flex-[3]">
-            <div className="w-[90%] md:w-[60%] m-auto flex justify-center flex-col mt-6 ">
+            <div className="w-[80%] md:w-[60%] m-auto flex justify-center flex-col mt-6 ">
               <p className="text-center text-gray-600 font-palanquin mb-4">
                 Who are you?
               </p>
@@ -119,35 +119,7 @@ const Login = () => {
                 )
               )}
 
-              {/* <button className="flex bg-gray-700 text-white font-montserrat w-full rounded-md mt-3 p-3 hover:bg-gray-500 transition-all font-medium gap-2 items-center text-[1.1rem] justify-center">
-                <img
-                  src={GoogleIcon}
-                  alt="google-icon"
-                  width={18}
-                  height={18}
-                />
-                <p>Continue with Google</p>
-              </button>
-              <button className="flex bg-gray-700 text-white font-montserrat w-full rounded-md mt-3 p-3 hover:bg-gray-500 transition-all font-medium gap-2 items-center text-[1.1rem] justify-center">
-                <img src={LinkedIn} alt="linkedInlogo" width={20} height={20} />
-                <p>Continue with LinkedIn</p>
-              </button>
-              <button className="flex bg-gray-700 text-white font-montserrat w-full rounded-md mt-3 p-3 hover:bg-gray-500 transition-all font-medium gap-2 items-center text-[1.1rem] justify-center">
-                <img
-                  src={FaceBookIcon}
-                  alt="facebooklogo"
-                  width={20}
-                  height={20}
-                />
-                <p>Continue with Facebook</p>
-              </button>
-              <button className="flex bg-gray-700 text-white font-montserrat w-full rounded-md mt-3 p-3 hover:bg-gray-500 transition-all font-medium gap-2 items-center text-[1.1rem] justify-center">
-                <img src={AppleIcon} alt="applelogo" width={20} height={20} />
-                <p>Continue with Apple</p>
-              </button>
-              <button className="flex border-[3px] border-bg-gray-700 text-gray-700 font-montserrat w-full rounded-md mt-3 p-3 hover:bg-gray-50 transition-all font-medium gap-2 items-center text-[1.1rem] justify-center">
-                <p>Continue with Email</p>
-              </button> */}
+
               <Link className="text-center font-montserrat text-gray-900 my-4">
                 Forgot password?
               </Link>
