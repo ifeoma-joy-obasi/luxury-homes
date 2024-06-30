@@ -1,7 +1,6 @@
 import React from 'react'
 import HeroImage from '../../../../assets/images/hero-img.jpg'
 const { SearchIcon } = icons;
-import { Link } from "react-router-dom";
 import { icons } from '../../../../assets';
 
 const Hero = () => {
