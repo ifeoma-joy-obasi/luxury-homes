@@ -127,4 +127,17 @@ visibility: hidden;
   text-indent: 35px;
 }
 
+.guest-highlight{
+  border:2px solid #374151;
+  background-color: #f9fafb;
+}
+
+.supplier-highlight{
+   border:2px solid #374151;
+  background-color: #f9fafb;
+}
+.email-border{
+
+  border:2px solid #374151;
+}
 }

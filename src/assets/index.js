@@ -29,6 +29,28 @@ import { GiVacuumCleaner as CleaningIcon } from "react-icons/gi";
 import { GiBusStop as BusStopIcon} from "react-icons/gi";
 import { LuSchool as SchoolIcon } from "react-icons/lu";
 import { TbShoppingBagHeart as ShoppingMallIcon} from "react-icons/tb";
+import { PiHouseLine as HouseIcon} from "react-icons/pi";
+import { PiCityLight as CorporateNetworkIcon} from "react-icons/pi";
+import { RiTeamLine as TeamIcon} from "react-icons/ri";
+import { LiaGlobeEuropeSolid as GlobeIcon} from "react-icons/lia";
+import { PiHandHeartLight as RankingBoostersIcon} from "react-icons/pi";
+import { BsPerson as PersonalAccountManagerIcon } from "react-icons/bs";
+import { MdOutlineVerifiedUser as VerifiedSupplyIcon } from "react-icons/md";
+import { HiOutlineArrowPath as ArrowPathIcon} from "react-icons/hi2";
+import { IoCheckmark as CheckIcon} from "react-icons/io5";
+import { FiEye as EyeIcon} from "react-icons/fi";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,4 +86,14 @@ export const icons = {
   BusStopIcon,
   SchoolIcon,
   ShoppingMallIcon,
+  HouseIcon,
+  CorporateNetworkIcon,
+  TeamIcon,
+  GlobeIcon,
+  RankingBoostersIcon,
+  PersonalAccountManagerIcon,
+  VerifiedSupplyIcon,
+  ArrowPathIcon,
+  CheckIcon,
+  EyeIcon,
 };

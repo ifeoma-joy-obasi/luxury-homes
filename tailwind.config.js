@@ -20,13 +20,13 @@ export default {
       },
       colors: {
         primary: "#FFFBDA",
-        'yello': "#FFEC9E",
+        yello: "#FFEC9E",
         "light-orangy": "#FFBB70",
-        "orangy": "#ED9455",
+        orangy: "#ED9455",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },
-      boxShadow: {
-        "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
+      border: {
+        emailBorder: "2px solid #374151",
       },
       backgroundImage: {
         hero: "url('assets/images/collection-background.svg')",
