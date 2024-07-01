@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeroVideo } from "../../../assets/videos/index"
-import {LOGIN,  LANDLORDSLOGINPAGE} from "../../constants/index"
+import {LandsLordsPageAccordion} from "../index"
+import {LOGIN,  LANDLORDSLOGINPAGE, FORLANDLORDSPAGE} from "../../constants/index"
 import { Link } from 'react-router-dom';
 import { icons } from '../../../assets';
 const { VerifiedSupplyIcon, AnalyticsIcon, SpeedIcon } = icons;
@@ -25,10 +26,14 @@ const ForLandlords = () => {
               Rent your Furnished apartment to Students, BusinessTravellers,
               Individuals and Families
             </h1>
-            <button className="w-[20%] bg-white-400 font-montserrat rounded-md mt-3 p-2 text-gray-400  hover:bg-white transition-all font-medium text-[1.1rem]">
+            <Link
+              role="button"
+              to={`/${LOGIN}/${LANDLORDSLOGINPAGE}`}
+              className=" w-[50%] md:w-[30%] lg:w-[20%] py-4 px-2 lg:py-2 bg-white-400 font-montserrat rounded-md mt-4  text-gray-400  hover:bg-white transition-all font-medium text-[1.1rem]"
+            >
               Create your first listing
-            </button>
-            <p>
+            </Link>
+            <p className="mt-3">
               Already a Luxuryhome landlord?{" "}
               <Link to={`/${LOGIN}/${LANDLORDSLOGINPAGE}`} className="border-b">
                 Log in here.
@@ -169,6 +174,65 @@ const ForLandlords = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-20">reviews</section>
+
+        <section className="mt-20">
+          <div className="bg-gray-50 rounded-[35px]">
+            <div className="flex max-w-[95%] mx-auto items-center h-[500px] justify-between text-gray-900">
+              <div className="flex-[3]">
+                {/* wraper so that we can create a space */}
+                <div className="pr-20">
+                  <h1 className="font-palanquin font-medium text-3xl leading-tight ">
+                    Download our FREE whitepaper and discover how extended stays
+                    can boost your rental profits!
+                  </h1>
+                  <div className="flex items-center justify-between h-[100px] mt-6">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="h-[50px] placeholder:text-gray-600 w-[45%] outline-none border p-4"
+                    />
+                    <div>
+                      <div className="flex gap-4 leading-9">
+                        <input type="checkbox" className="w-[15px]" />
+                        <p>Yes, I agree to the</p>
+                      </div>
+                      <Link
+                        to={`/${FORLANDLORDSPAGE}`}
+                        className="border-b text-gray-600 hover:text-gray-900 cursor-pointer hover:border-gray-900"
+                      >
+                        Luxuryhomes Privacy Policy.
+                      </Link>
+                    </div>
+                    <button className="bg-gray-700 text-white font-montserrat rounded-md mt-3 py-3 px-8 hover:bg-gray-500 transition-all font-medium text-[1.1rem]">
+                      Download Whitepaper
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-[1]">
+                <img
+                  className="block max-w-full h-[320px] rounded-2xl"
+                  src="https://static.vecteezy.com/system/resources/previews/007/510/779/non_2x/landlord-word-on-yellow-brick-wall-free-photo.jpg"
+                  alt="a guide for landlords"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div className="max-w-[95%] mx-auto">
+            <LandsLordsPageAccordion />
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div>
+
           </div>
         </section>
       </main>

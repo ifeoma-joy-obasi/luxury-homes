@@ -41,8 +41,8 @@ import { IoCheckmark as CheckIcon} from "react-icons/io5";
 import { FiEye as EyeIcon} from "react-icons/fi";
 import { TbBrandGoogleAnalytics as AnalyticsIcon} from "react-icons/tb";
 import { MdSpeed as SpeedIcon} from "react-icons/md";
-
-
+import { FaPlus as PlusIcon} from "react-icons/fa6";
+import { FaMinus as MinusIcon} from "react-icons/fa";
 
 
 
@@ -98,4 +98,6 @@ export const icons = {
   EyeIcon,
   AnalyticsIcon,
   SpeedIcon,
+  PlusIcon,
+  MinusIcon,
 };

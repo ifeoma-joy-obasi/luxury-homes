@@ -20,6 +20,9 @@ import LandlordsLogin from './login/landlordsLogin/LandlordsLogin'
 import GuestLogin from './login/guestlogin/GuestLogin'
 import ForgotPassword from './forgotPassword/ForgotPassword'
 import ForLandlords from './forLandlordsPage/ForLandlords'
+import LandsLordsPageAccordion from '../ui/landlordsPageAccordion/LandsLordsPageAccordion'
+
+
 
 
 
@@ -46,4 +49,5 @@ export {
   GuestLogin,
   ForgotPassword,
   ForLandlords,
+  LandsLordsPageAccordion,
 };
