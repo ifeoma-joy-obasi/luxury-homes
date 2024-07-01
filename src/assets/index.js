@@ -5,7 +5,7 @@ import { IoCloseOutline as CloseIcon } from "react-icons/io5";
 import { MdOutlineExpandMore as ExpandMoreIcon } from "react-icons/md";
 import { MdOutlineExpandLess as ExpandLessIcon } from "react-icons/md";
 import { GrFormNext as CheveronRightAccordionIcon } from "react-icons/gr";
-import { MdStarRate as RatingStarIcon } from "react-icons/md";
+import { SiTrustpilot as RatingStarIcon } from "react-icons/si";
 import { LiaCheckCircle as CircleCheckIcon} from "react-icons/lia";
 import { FiHeart as HeartIcon } from "react-icons/fi";
 import { FaChevronLeft as CheveronLeftIcon} from "react-icons/fa6";
@@ -35,12 +35,12 @@ import { RiTeamLine as TeamIcon} from "react-icons/ri";
 import { LiaGlobeEuropeSolid as GlobeIcon} from "react-icons/lia";
 import { PiHandHeartLight as RankingBoostersIcon} from "react-icons/pi";
 import { BsPerson as PersonalAccountManagerIcon } from "react-icons/bs";
-import { MdOutlineVerifiedUser as VerifiedSupplyIcon } from "react-icons/md";
+import { VscWorkspaceTrusted as VerifiedSupplyIcon } from "react-icons/vsc";
 import { HiOutlineArrowPath as ArrowPathIcon} from "react-icons/hi2";
 import { IoCheckmark as CheckIcon} from "react-icons/io5";
 import { FiEye as EyeIcon} from "react-icons/fi";
-
-
+import { TbBrandGoogleAnalytics as AnalyticsIcon} from "react-icons/tb";
+import { MdSpeed as SpeedIcon} from "react-icons/md";
 
 
 
@@ -96,4 +96,6 @@ export const icons = {
   ArrowPathIcon,
   CheckIcon,
   EyeIcon,
+  AnalyticsIcon,
+  SpeedIcon,
 };

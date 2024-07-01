@@ -19,7 +19,7 @@ import NotFound from './notFound/NotFound'
 import LandlordsLogin from './login/landlordsLogin/LandlordsLogin'
 import GuestLogin from './login/guestlogin/GuestLogin'
 import ForgotPassword from './forgotPassword/ForgotPassword'
-
+import ForLandlords from './forLandlordsPage/ForLandlords'
 
 
 
@@ -45,4 +45,5 @@ export {
   LandlordsLogin,
   GuestLogin,
   ForgotPassword,
+  ForLandlords,
 };

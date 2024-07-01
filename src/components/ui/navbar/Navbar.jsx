@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { icons } from '../../../assets';
 import DropDownMenu from '../dropdownMenu/DropDownMenu'
+import { FORLANDLORDSPAGE } from '../../constants';
 const { CircledUserIcon, HamburgerMenuIcon } = icons;
 
 const Navbar = () => {
@@ -24,12 +25,21 @@ const Navbar = () => {
         >
           LuxuryHomes
         </Link>
-        <div
-          onClick={handleDropDownMenu}
-          className="h-12 flex gap-4 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md"
-        >
-          <CircledUserIcon className="text-[34px]" />
-          <HamburgerMenuIcon className="text-[20px] font-extrabold" />
+
+        <div className="flex gap-4 items-center justify-between md:w-60">
+          <Link
+            to={`${FORLANDLORDSPAGE}`}
+            className="hover:border-b text-gray-900 border-gray-900"
+          >
+            For Landlords
+          </Link>
+          <div
+            onClick={handleDropDownMenu}
+            className="h-12 flex gap-4 text-gray-400 items-center cursor-pointer ring-1 ring-slate-900/5  rounded-full px-2 hover:shadow-md"
+          >
+            <CircledUserIcon className="text-[34px]" />
+            <HamburgerMenuIcon className="text-[20px] font-extrabold" />
+          </div>
         </div>
       </nav>
       <DropDownMenu showDropdownmenu={showDropdownmenu} showMenu={showMenu} />

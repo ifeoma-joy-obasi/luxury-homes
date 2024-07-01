@@ -9,6 +9,7 @@ import {
   LandlordsLogin,
   GuestLogin,
   ForgotPassword,
+ForLandlords,
 } from "./components/pages";
 import { Route, Routes } from 'react-router-dom';
 import {
@@ -16,6 +17,7 @@ import {
   PRODUCTLIST,
   LANDLORDSLOGINPAGE,
   FORGOTPASSWORD,
+  FORLANDLORDSPAGE,
 } from "./components/constants";
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path={`${FORLANDLORDSPAGE}`} element={<ForLandlords />} />
         <Route path={`${PRODUCTLIST}`} element={<ProductList />} />
         <Route path={`${PRODUCTLIST}/:productId`} element={<SinglePage />} />
         <Route path={`${LOGIN}`} element={<Login />}>
